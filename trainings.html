@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF 8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--w3schools, ensures the website works on all devices on screens-->
+    <title>Fit Flow - Shopping Cart</title>
+    <!--external JS and CSS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="list-builder.js"></script>
+    <script defer src="suscribe.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="external.css" />
+    <link rel="stylesheet" href="external2.css" />
+    <!--Font Awesome for Social Media Icons-->
+    <script src="jquery-3.5.1.min.js"></script>
+    <!-- Bootstrap CDN -->
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" href="suscribe.css" />
+  </head>
+
+  <body>
+    <!--using mix of semantic elements and div throughout-->
+    <!--Header / Nav Bar-->
+    <nav class="navbar navbar-inverse" id="navContainer" role="navigation">
+      <!--it's automatically fluid, doesn't need conteiner-->
+      <div class="container-fluid" id="navContainer" role="navigation">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavBar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <img
+            class="navbar-brand"
+            src="images/Logo3.png"
+            width="429"
+            height="182"
+            id="logo"
+          />
+        </div>
+        <div class="collapse navbar-collapse" id="myNavBar">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Memberships</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">BMI Calculator</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#"
+                ><span class="glyphicon glyphicon-user"></span> Login</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <section class="course">
+        <h1>Trainings we Offer</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa optio
+          provident voluptates. Molestiae?m
+        </p>
+
+        <div class="rs-row">
+          <div class="course-col">
+            <h3>Powerlifting</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+              dolorem facilis.
+            </p>
+          </div>
+          <div class="course-col">
+            <h3>Crossfit</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+              dolorem facilis.
+            </p>
+          </div>
+          <div class="course-col">
+            <h3>WeightLifting</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+              dolorem facilis.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="article">
+        <div class="row-2">
+          <div class="course-2">
+            <h2>Powerlifting</h2>
+            <p>
+              Sport that has been around for decadesSport that has been around
+              for decadesSport that has been around for decadesSport that has
+              been around for decadesSport that has been around for decadesSport
+              that has been around for decadesSport that has been around for
+              decades
+            </p>
+            <img src="/Images/femalepw.png" class="imagero" alt="" />
+          </div>
+          <div class="course-2">
+            <h2>Crossfit</h2>
+            <p>
+              Sport that has been around for decadesSport that has been around
+              for decadesSport that has been around for decadesSport that has
+              been around for decadesSport that has been around for decadesSport
+              that has been around for decadesSport that has been around for
+              decades
+            </p>
+            <img src="/Images/cross.jpg" class="imagero" alt="" />
+          </div>
+          <div class="course-2">
+            <h2>Weightlifting</h2>
+            <p>
+              Sport that has been around for decadesSport that has been around
+              for decadesSport that has been around for decadesSport that has
+              been around for decadesSport that has been around for decadesSport
+              that has been around for decadesSport that has been around for
+              decades
+            </p>
+            <img src="/Images/weight.jpg" class="imagero" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <div class="future">
+        <h1 class="future-h1p">Anna McGraven</h1>
+        <p>
+          This is Anna, she has been Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Incidunt porro sapiente expedita tempora? Dolorum
+          similique soluta, placeat numquam nulla deleniti itaque ut modi,
+          laboriosam commodi at consequuntur dolores, ratione velit.
+        </p>
+        <button id="btnFadeIn" class="transformBTNs">
+          Show Transformation
+        </button>
+        <button id="btnFadeOut" class="transformBTNs">
+          Hide Transformation
+        </button>
+
+        <div id="box-trans">
+          <img src="/Images/Transformation.png" alt="" />
+          <h2 class="future-h1p">
+            Anna has Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Similique recusandae animi vel delectus officia. Quo voluptates
+            neque nemo asperiores laudantium facilis praesentium, animi tenetur
+            aspernatur fugit molestias dignissimos nihil dolorem.
+          </h2>
+        </div>
+      </div>
+      <div class="suscribe-section">
+        <button class="modal-btn">Press to subscribe</button>
+      </div>
+
+      <div class="modal-bg">
+        <div class="suscribe-box">
+          <h2>Suscribe to our NewsLetter</h2>
+          <form class="form">
+            <label for="email"
+              >Please insert your email for our weekly content</label
+            >
+            <input
+              type="email"
+              id="email"
+              required
+              placeholder="Enter your email"
+            />
+            <button type="submit" onclick="validator" class="btn-close">
+              Suscribe
+            </button>
+          </form>
+          <button class="modal-close">X</button>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer -->
+    <footer>
+      <div class="main-content">
+        <div class="leftt box">
+          <div class="content">
+            <img src="/Images/Logo3.PNG" alt="" />
+            <h2>About</h2>
+            <span class="text"
+              >Fit Flow offers a wide range of training methods that can fit
+              anyone, regardless of age, weight or height.</span
+            >
+            <div class="icons">
+              <i class="fa fa-amazon" style="font-size: 24px; color: white"></i>
+              <i
+                class="fa fa-facebook-square"
+                style="font-size: 24px; color: white"
+              ></i>
+              <i
+                class="fa fa-twitter-square"
+                style="font-size: 24px; color: white"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="centerr box">
+          <h2>Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="text"
+                >129 S Circular Rd, Saint Catherine's, Dublin 8</span
+              >
+            </div>
+            <div class="email">
+              <span class="text"> FitFlowDublin@gmail.com</span>
+              <br />
+            </div>
+            <div class="icons">
+              <i
+                class="fa fa-map-marker"
+                style="font-size: 24px; color: white"
+              ></i>
+              <i
+                class="fa fa-envelope-o"
+                style="font-size: 24px; color: white"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="rightt box">
+          <h2>Useful Links</h2>
+          <ul>
+            <li>
+              <a href="https://www.examine.com/">Examine Supplement help</a>
+            </li>
+            <li>
+              <a href="https://www.myfitnesspal.com/"
+                >Track your daily calorie intake</a
+              >
+            </li>
+            <li><a href="https://www.gymshark.com/">Gym clothing</a></li>
+            <li>
+              <a href="https://www.rogueeurope.eu/">New Fitness Equipment</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

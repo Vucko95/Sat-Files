@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF 8">
+        <meta name="viewport" content ="width=device-width, initial-scale=1"> <!--w3schools, ensures the website works on all devices on screens-->
+        <title>Fit Flow - Login</title> 
+        <!--external JS and CSS-->
+        <script src="list-builder.js"></script>
+        <link rel="stylesheet" href="external.css"> 
+        <!--Font Awesome for Social Media Icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <!--using mix of semantic elements and div throughout-->
+        <!--Header / Nav Bar-->
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid" id="navContainer">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavBar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <img class="navbar-brand" src="images/Logo3.png" width="429" height="182" id="logo"/>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavBar">
+                <ul class="nav navbar-nav">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="memberships.html">Memberships</a></li>
+                  <li><a href="#">BMI Calculator</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#"><span class="glyphicon glyphicon-user"></span>    Login</a></li>
+                </ul>
+              </div>
+          </div>
+        </nav>
+
+        <section>
+            <div class="container-fluid">
+                <div id="LogIn">
+                    <h1>Login</h1>
+                </div>
+                <div id="Form">
+                <form action="index.html" id="LogInForm" method="post" onsubmit="return log_in();"> 
+                 <table>
+                    <br>
+                    <tr>
+                        <td>Username</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="username" id="username" placeholder="Username"/></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                    </tr>
+                    <tr>
+                        <td><input type="password" name="password" id="password" placeholder="Password"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Login"></td>  
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="*Forgot Password" id="ForgotPasswordButton" onclick=document.location="ForgotPassword.html"></td>
+                    </tr>
+                </table>
+              </form>
+            </div>
+            <!--<div id="ForgotPassword">
+              <form id="ForgotPasswordForm">
+                <table>
+                    <tr>
+                        <td>Email</td>
+                    </tr>
+                    <tr>
+                        <td><input type="email" name="email" id="email" placeholder="Enter Email Address"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="Re-send Password" id="RSPasswordButton"></td>
+                    </tr>
+                </table>
+              </form>
+            </div>-->
+          </div>
+       </section>
+           
+
+        <footer id="LIfooter">
+          <div class="row">
+            <div class="col-sm-3">
+              <img src="images/Logo3.PNG" width="429" height="182" id="logoFooter" />
+          </div>
+          <div class="col-sm-3">
+              <h3>ABOUT FIT FLOW</h3>
+              <ul>
+                <li>Get In Touch</li>
+                <li>About Us</li>
+                <li>Find Us</li>
+                <li>Join Us</li>
+              </ul>
+          </div>
+          <div class="col-sm-3">
+              <h3>THE BORING STUFF</h3>
+              <ul>
+                <li>Terms and Conditions</li>
+                <li>Privacy Notice</li>
+                <li>Copyright</li>
+              </ul>
+          </div>
+          <!--Footer Icons-->
+          <div class="col-sm-3" id="footerIcons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+          </div>
+        </div>
+      </footer>
+
+    </body>
+
+</html>

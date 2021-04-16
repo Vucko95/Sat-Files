@@ -1,0 +1,371 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+}
+#titleh1 {
+  text-align: center;
+}
+.course {
+  background-color: black;
+  width: 100%;
+  color: white;
+  margin: auto;
+  text-align: center;
+  padding-top: 70px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+p {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 10px;
+  color: white;
+}
+h2 {
+  color: white;
+  font-weight: bold;
+}
+
+.rs-row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.course-col {
+  border: 2px solid white;
+  flex-basis: 30%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  padding: 20px 12px;
+}
+.course-col:hover {
+  background-color: white;
+  color: black;
+}
+.course-col:hover p {
+  color: black;
+}
+h3 {
+  text-align: center;
+  margin: 10px 0;
+}
+@media (max-width: 700px) {
+  .rs-row {
+    flex-direction: column;
+  }
+}
+.row-2 {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.row-2 img {
+  width: 90%;
+  height: 60%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.course-2 {
+  flex-basis: 30%;
+  box-sizing: border-box;
+}
+@media (max-width: 700px) {
+  .row-2 {
+    flex-direction: column;
+  }
+}
+
+/* Box Transformation */
+.future {
+  padding: auto;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  justify-content: center;
+  align-content: center;
+}
+.future button {
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  background-color: cornflowerblue;
+  font-weight: bold;
+  color: black;
+}
+.future img {
+  width: 40%;
+  margin-left: 30%;
+}
+.future h1 {
+  color: white;
+  font-family: monospace;
+}
+
+.BMI-box-img {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .BMI-box-img {
+    flex-direction: row;
+  }
+}
+
+#BMI-box {
+  height: 300px;
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  flex-direction: column;
+  border-radius: 10px 0;
+  overflow: hidden;
+  background: black;
+  align-items: center;
+  border-color: cyan;
+  padding: 10px;
+  border-style: solid;
+}
+
+#calculation input[type="text"] {
+  height: 30px;
+  width: 100px;
+  margin: 10px;
+  background-color: white;
+  padding: 0px 10px;
+  border: 2px solid cyan;
+  font-size: 12px;
+}
+#calculation input[type="submit"] {
+  height: 40px;
+  width: 100px;
+  border: none;
+  background: green;
+  color: black;
+  font-weight: 900;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 20px;
+}
+#finalBMI {
+  font-size: 20px;
+  color: white;
+  font-style: italic;
+  font-weight: 900;
+  padding: 0px 10px;
+  margin-left: 100px;
+}
+#results li,
+h2 {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  margin: auto;
+}
+.bmiimg {
+  width: 50%;
+  height: 280px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.textbmi p {
+  font-size: 20px;
+  width: 100%;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 800px;
+}
+
+.hero {
+  display: flex;
+
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+  }
+}
+
+.left {
+  flex: 0 0 50%;
+  margin-top: 20px;
+}
+
+.right {
+  flex: 0 0 50%;
+}
+.right img {
+  width: 90%;
+  border-radius: 5px;
+}
+/* Suscribe Button */
+.modal-bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+.bg-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.suscribe-box {
+  font-family: "Courier New", Courier, monospace;
+  position: relative;
+  background-image: url(/Images/suscribeimg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  width: 100%;
+  max-width: 600px;
+  height: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  padding: 8px;
+  color: black;
+}
+/* @media (max-width: 600px) {
+  .suscribe-box {
+  }
+} */
+.btn-close {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.btn-close:hover {
+  background-color: red;
+  cursor: pointer;
+}
+#email {
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  color: black;
+}
+/* Suscribe Outside */
+.suscribe-section {
+  margin-bottom: 20px;
+}
+.suscribe-section button {
+  width: 50%;
+  height: 50px;
+}
+
+/* Footer */
+
+footer {
+  color: white;
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  background: #111;
+}
+.main-content {
+  display: flex;
+}
+.main-content .box {
+  flex-basis: 50%;
+  width: 30%;
+  padding: 1px 1px;
+}
+
+.box .content {
+  margin-top: 5px;
+  position: relative;
+  margin-left: 10px;
+}
+.rightt ul {
+  padding-left: 100px;
+  margin-top: 10px;
+  align-items: center;
+}
+.rightt li a {
+  color: white;
+  font-weight: bold;
+  font-family: arial;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box {
+    margin: 5px 0;
+    padding-left: 20px;
+  }
+  .rightt ul {
+    padding-left: 20px;
+  }
+  /* .content i {
+    justify-content: space-between;
+  } */
+}
+.icons {
+  margin-right: 200px;
+}
+.content img {
+  position: absolute;
+  opacity: 0.1;
+}
+.text {
+  font-family: "Courier New", Courier, monospace;
+  justify-content: center;
+  align-content: center;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF 8">
+        <meta name="viewport" content ="width=device-width, initial-scale=1"> <!--w3schools, ensures the website works on all devices on screens-->
+        <title>Fit Flow - Shopping Cart</title> 
+        <!--external JS and CSS-->
+        <script src="list-builder.js"></script>
+        <link rel="stylesheet" href="external.css"> 
+        <!--Font Awesome for Social Media Icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+       
+    </head>
+
+    <body>
+        <!--using mix of semantic elements and div throughout-->
+        <!--Header / Nav Bar-->
+        <nav class="navbar navbar-inverse" id="navContainer" role="navigation"> <!--it's automatically fluid, doesn't need conteiner-->
+          <!--<div class="container-fluid" id="navContainer" role="navigation">-->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavBar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <img class="navbar-brand" src="images/Logo3.png" width="429" height="182" id="logo"/>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavBar">
+                <ul class="nav navbar-nav">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Memberships</a></li>
+                  <li><a href="#">Gallery</a></li>
+                  <li><a href="#">BMI Calculator</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#"><span class="glyphicon glyphicon-user"></span>    Login</a></li>
+                </ul>
+              </div>
+          </div>
+        </nav>
+
+       
+
+        
+        <footer id="hpfooter">
+          <div class="row">
+            <div class="col-sm-3">
+          <img src="images/Logo3.PNG" width="429" height="182" id="logoFooter" />
+        </div>
+        <div class="col-sm-3">
+          <h3>ABOUT FIT FLOW</h3>
+          <ul>
+            <li>Get In Touch</li>
+            <li>About Us</li>
+            <li>Find Us</li>
+            <li>Join Us</li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <h3>THE BORING STUFF</h3>
+          <ul>
+            <li>Terms and Conditions</li>
+            <li>Privacy Notice</li>
+            <li>Copyright</li>
+          </ul>
+        </div>
+<!--Footer Icons-->
+        <div class="col-sm-3" id="footerIcons">
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+      </div>
+      </div>
+        </footer>
+
+    </body>
+
+</html>

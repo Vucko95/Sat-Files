@@ -1,0 +1,104 @@
+.BMI-box-img {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .BMI-box-img {
+    flex-direction: row;
+  }
+}
+
+#BMI-box {
+  height: 300px;
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  flex-direction: column;
+  border-radius: 10px 0;
+  overflow: hidden;
+  background: black;
+  align-items: center;
+  border-color: cyan;
+  padding: 10px;
+  border-style: solid;
+}
+
+#calculation input[type="text"] {
+  height: 30px;
+  width: 100px;
+  margin: 10px;
+  background-color: white;
+  padding: 0px 10px;
+  border: 2px solid cyan;
+  font-size: 12px;
+}
+#calculation input[type="submit"] {
+  height: 40px;
+  width: 100px;
+  border: none;
+  background: green;
+  color: black;
+  font-weight: 900;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 20px;
+}
+#finalBMI {
+  font-size: 20px;
+  color: white;
+  font-style: italic;
+  font-weight: 900;
+  padding: 0px 10px;
+  margin-left: 100px;
+}
+#results li,
+h2 {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  margin: auto;
+}
+.bmiimg {
+  width: 50%;
+  height: 280px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.textbmi p {
+  font-size: 20px;
+  width: 100%;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 800px;
+}
+
+.hero {
+  display: flex;
+
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+  }
+}
+
+.left {
+  flex: 0 0 50%;
+  margin-top: 20px;
+}
+
+.right {
+  flex: 0 0 50%;
+}
+.right img {
+  width: 90%;
+  border-radius: 5px;
+}
